@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дикая роза | тестовое задание на Bootstrap 5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body class="bg-light">
+    <header class="header">
+        <div class="container shadow p-3 mb-3 d-flex justify-content-between bg-black rounded">
+            <a href="" class="logo"><img src="img/logo.svg" alt="" srcset=""></a>
+            <button type="button" class="btn ml-0 text-light">Выйти</button>
+        </div>
+    </header>
+    <section class="my-3">
+        <!-- Sidebar -->
+        <div class="container">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white rounded">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">Отчеты</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/#" class="nav-link px-0">
+                                            <i class="fas fa-money-bill-transfer icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Движение денег</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/#" class="nav-link px-0">
+                                            <i class="fas fa-ranking-star icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Продажи</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/#" class="nav-link px-0">
+                                            <i class="fas fa-timeline icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Производство</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/#" class="nav-link px-0">
+                                            <i class="fas fa-boxes-stacked icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Склад</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">Учет</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/payment" class="nav-link px-0">
+                                            <i class="fas fa-list-check icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Операции</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/project" class="nav-link px-0">
+                                            <i class="fas fa-diagram-project icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Проекты</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/order" class="nav-link px-0">
+                                            <i class="fas fa-bars-progress icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Заказы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">Справочники</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/partner" class="nav-link px-0">
+                                            <i class="fas fa-hand-holding-hand icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Контрагенты</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/activity" class="nav-link px-0">
+                                            <i class="fas fa-thumbtack icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Статьи</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/goods" class="nav-link px-0">
+                                            <i class="fas fa-book icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Номенклатура</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
+                            <li>
+                                <span
+                                    class="ms-1 d-none d-sm-inline text-uppercase fw-bold promotion">Продвижение</span>
+                            </li>
+                            <li>
+                                <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">Выкупы</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/mission" class="nav-link px-0">
+                                            <i class="fas fa-briefcase icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Задания</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/buy" class="nav-link px-0">
+                                            <i class="fas fa-cart-shopping icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Выкупы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu5" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">Справочники</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/buyer" class="nav-link px-0">
+                                            <i class="fas fa-street-view icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Покупатели</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0">
+                                            <svg class="icon icon-clr" width="16" height="16">
+                                            </svg>
+                                            <span class="d-none d-sm-inline ps-1">Продавцы</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/acc" class="nav-link px-0">
+                                            <i class="fas fa-building-columns icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Счета</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/card" class="nav-link px-0">
+                                            <i class="fas fa-credit-card icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Карты</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/phone" class="nav-link px-0">
+                                            <i class="fas fa-phone icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Телефоны</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/district" class="nav-link px-0">
+                                            <i class="fas fa-map-location-dot icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Районы</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0">
+                                            <svg class="icon icon-clr" width="19" height="19">
+
+                                            </svg>
+                                            <span class="d-none d-sm-inline ps-1">Отчеты</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu6" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">wb</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu6" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/wbincome" class="nav-link px-0">
+                                            <i class="fas fa-dolly icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Поставки</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/wbstock" class="nav-link px-0">
+                                            <i class="fas fa-layer-group icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Склад</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/wborder" class="nav-link px-0">
+                                            <i class="fas fa-diagram-next icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Заказы</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/wbsale" class="nav-link px-0">
+                                            <i class="fas fa-hand-holding-dollar icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Продажи</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/wbreport" class="nav-link px-0">
+                                            <i class="fas fa-chart-pie icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Отчеты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu7" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">Логистика</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu7" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/stock" class="nav-link px-0">
+                                            <i class="fas fa-warehouse icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Склады</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/product" class="nav-link px-0">
+                                            <i class="fas fa-shapes icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Товары</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/delivery" class="nav-link px-0">
+                                            <i class="fas fa-truck-arrow-right icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Доставки</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu8" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="ms-1 d-none d-sm-inline text-uppercase">CRM</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu8" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/calculate" class="nav-link px-0">
+                                            <i class="fas fa-envelope-open-text icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Заявки</a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="https://d.mrise.ru/message" class="nav-link px-0">
+                                            <i class="fas fa-comment icon-clr"></i>
+                                            <span class="d-none d-sm-inline ps-1">Сообщения</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /. end Sidebar -->
+                <!-- Table -->
+                <div class="col py-3 ms-3 bg-white rounded">
+                    <h3>Операции</h3>
+                    <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-6">Найдено <span class="fw-bold">2</span> позиции</p>
+                        <div class="d-flex">
+                            <button type="button" class="btn ms-1">
+                                <i class="fas fa-download"></i>
+                            </button>
+                            <button type="button" class="btn ms-1">
+                                <i class="fas fa-plus-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr class="align-middle">
+                                    <th scope="col">Дата</th>
+                                    <th scope="col">Отправитель</th>
+                                    <th scope="col">Получатель</th>
+                                    <th scope="col">Сумма, руб</th>
+                                    <th scope="col">Описание</th>
+                                    <th scope="col">Проект / Заказ</th>
+                                    <th scope="col">Управление</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <p class="fs-5 ">19.05.2022</p>
+                                        <p class="fs-6 fw-normal lh-sm">19.05.2022 19:30</p>
+                                        <p class="fs-6 fw-light lh-sm">Александр Валуев</p>
+                                    </th>
+                                    <td>
+                                        <p class="fs-5 lh-sm">Внешний мир</p>
+                                        <p class="fs-6 fw-light">Извне</p>
+                                    </td>
+                                    <td>
+                                        <p class="fs-5 lh-sm">Добровольский В. В.</p>
+                                        <p class="fs-6 fw-light">Сбер</p>
+                                    </td>
+                                    <td>
+                                        <p class="fs-5">1 000 000</p>
+                                        <p class="fs-6 fw-light lh-sm">Перевод между счетами</p>
+                                    </td>
+                                    <td class="text-wrap lh-sm">Выделение бюджета на закупку всех расходников,
+                                        оборудования в Бишкеке</td>
+                                    <td>
+                                        <p class="fs-6 lh-sm">Цех в Киргизии</p>
+                                        <p class="fs-6 fw-light">№ 123456-ДС</p>
+                                    </td>
+                                    <td class="align-middle">
+                                        <div class="d-flex justify-content-center">
+                                            <button type="button" class="btn mx-2">
+                                                <i class="fas fa-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn mx-2">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <p class="fs-5 ">19.05.2022</p>
+                                        <p class="fs-6 fw-normal lh-sm">19.05.2022 19:30</p>
+                                        <p class="fs-6 fw-light lh-sm">Александр Валуев</p>
+                                    </th>
+                                    <td>
+                                        <p class="fs-5 lh-sm">Внешний мир</p>
+                                        <p class="fs-6 fw-light">Извне</p>
+                                    </td>
+                                    <td>
+                                        <p class="fs-5 lh-sm">Добровольский В. В.</p>
+                                        <p class="fs-6 fw-light">Сбер</p>
+                                    </td>
+                                    <td>
+                                        <p class="fs-5">1 000 000</p>
+                                        <p class="fs-6 fw-light lh-sm">Перевод между счетами</p>
+                                    </td>
+                                    <td class="text-wrap lh-sm">Выделение бюджета на закупку всех расходников,
+                                        оборудования в Бишкеке</td>
+                                    <td>
+                                        <p class="fs-6 lh-sm">Цех в Киргизии</p>
+                                        <p class="fs-6 fw-light">№ 123456-ДС</p>
+                                    </td>
+                                    <td class="align-middle">
+                                        <div class="d-flex justify-content-center">
+                                            <button type="button" class="btn mx-2">
+                                                <i class="fas fa-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn mx-2">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /. end Table -->
+            </div>
+        </div>
+
+    </section>
+    <main>
+
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

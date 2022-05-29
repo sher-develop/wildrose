@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --own-clr: #6610f2;
+    --fnt-clr: #7e7c89;
+    --fnt-clr-hover: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--fnt-clr) !important;
+}
+
+p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.promotion {
+    color: var(--fnt-clr) !important;
+}
+
+.icon-clr {
+    color: var(--own-clr);
+}
